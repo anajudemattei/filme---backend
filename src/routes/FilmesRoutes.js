@@ -7,6 +7,4 @@ router.get('/filmes', filmeController.getAllFilmes);
 router.get('/filmes/:id', filmeController.getFilmeById);
 router.put('/filmes/:id', filmeController.updateFilme);
 router.delete('/filmes/:id', filmeController.deleteFilme);
-router.get('/filmes/top10', filmeController.getTop10Filmes);
-
 module.exports = router;

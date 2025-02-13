@@ -58,15 +58,6 @@ const router = {
             res.status(404).json({ message: "Erro ao deletar filme", error: error.message });
         }
     },
-
-    getTop10Filmes: (req, res) => {
-        try {
-            const filmes = lista.getTop10Filmes();
-            res.status(200).json(filmes);
-        } catch (error) {
-            res.status(404).json({ message: "Erro ao buscar Top10", error: error.message });
-        }
-    },
 };
 
 module.exports = router;

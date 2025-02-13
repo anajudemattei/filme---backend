@@ -26,9 +26,6 @@ class FilmeList {
     getTotalFilmes() {
         return this.filmes.length;
     }
-    getTop10Filmes() {
-        return this.filmes.sort((a, b) => b.plays - a.plays).slice(0, 10);
-    }
 }
 
 module.exports = FilmeList;
