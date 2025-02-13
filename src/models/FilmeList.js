@@ -10,13 +10,13 @@ class FilmeList {
     }
     getFilmeById(id) {
         const filme = this.filmes.find((filme) => filme.id == id);
-        if(!filme) {
-            throw new Error("Filme não encontrada!");
+        if (!filme) {
+            throw new Error("Filme não encontrado!");
         }
         return filme;
     }
     updateFilme(id, updateData) {
-        const filme = this.getfilmeById(id);
+        const filme = this.getFilmeById(id);
         Object.assign(filme, updateData);
         return filme;
     }
